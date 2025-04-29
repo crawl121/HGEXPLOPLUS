@@ -29,3 +29,41 @@ pip install -r requirements.txt
 ## 🧪 Usage
 
 ▶ CLI Mode
+```bash
+cd HGExploPlus
+python -m cli.main \
+  --targets targets.txt \
+  --userlist wordlists/users.txt \
+  --passlist wordlists/passwords.txt \
+  --threads 20 \
+  --port 22 \
+  --payload \
+  --scan \
+  --os linux
+```
+🌐 GUI Mode
+
+1.Run the GUI:
+```bash
+cd "C:\Users\YOURNAME\Music\HGExploPlus"
+python -m gui.main
+```
+2.Open your browser and visit:
+```bash
+http://127.0.0.1:5000
+```
+The GUI allows you to choose targets, usernames, passwords, OS type, and execute attacks interactively.
+
+## 🔐 Disclaimer
+
+This tool is created for educational and authorized penetration testing purposes only.
+Do NOT use this tool on systems you do not own or have explicit permission to test.
+The author is not liable for misuse of this tool.
+
+## 👨‍💻 Author
+
+crawl
+Developer of HGExploPlus – Engine, UI, Automation
+instgram: instagram.com/zwn_crawl
+github: github.com/crawl21
+
