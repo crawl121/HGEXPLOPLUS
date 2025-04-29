@@ -65,7 +65,7 @@ The author is not liable for misuse of this tool.
 crawl
 Developer of HGExploPlus – Engine, UI, Automation
 
-instgram: instagram.com/zwn_crawl
+instgram: www.instagram.com/zwn_crawl
 
-github: github.com/crawl21
+github: www.github.com/crawl21
 
