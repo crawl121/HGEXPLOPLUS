@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HGExploPlus - SSH Exploitation Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: #00ff88;
+            font-family: 'Courier New', monospace;
+        }
+        .container {
+            max-width: 600px;
+            background-color: #1a1a1a;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 0 15px #00ff88;
+            margin-top: 80px;
+        }
+        .form-control, .form-select {
+            background-color: #111;
+            color: #0f0;
+            border: 1px solid #00ff88;
+        }
+        .form-control::placeholder {
+            color: #33ffbb;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        .btn-hack {
+            background-color: #00ff88;
+            color: #000;
+            border: none;
+        }
+        .btn-hack:hover {
+            background-color: #00cc66;
+        }
+        h2 {
+            color: #00ff88;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>HGExploPlus</h2>
+        <form method="POST" action="{{ url_for('start') }}">
+            <div class="mb-3">
+                <label>Targets File Path</label>
+                <input type="text" class="form-control" name="targets" placeholder="C:/path/to/targets.txt" required>
+            </div>
+            <div class="mb-3">
+                <label>Username Wordlist Path</label>
+                <input type="text" class="form-control" name="userlist" placeholder="C:/path/to/users.txt" required>
+            </div>
+            <div class="mb-3">
+                <label>Password Wordlist Path</label>
+                <input type="text" class="form-control" name="passlist" placeholder="C:/path/to/passwords.txt" required>
+            </div>
+            <div class="mb-3">
+                <label>Number of Threads</label>
+                <input type="number" class="form-control" name="threads" value="5">
+            </div>
+            <div class="mb-3">
+                <label>Port</label>
+                <input type="number" class="form-control" name="port" value="22">
+            </div>
+            <div class="mb-3">
+                <label>Target OS</label>
+                <select class="form-select" name="os">
+                    <option value="linux" selected>Linux</option>
+                    <option value="windows">Windows</option>
+                </select>
+            </div>
+            <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" name="payload" id="payload">
+                <label class="form-check-label" for="payload">Execute Payload after Login</label>
+            </div>
+            <button type="submit" class="btn btn-hack w-100">Start Attack</button>
+        </form>
+    </div>
+</body>
+</html>
