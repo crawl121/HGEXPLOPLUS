@@ -13,3 +13,19 @@
 - 🛠️ CLI interface with command-line flags
 - 📂 Auto output logging in JSON format
 
+
+## 🚀 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/HGExploPlus.git
+cd HGExploPlus
+```
+2.Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## 🧪 Usage
+
+▶ CLI Mode
