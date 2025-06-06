@@ -45,7 +45,7 @@ python -m cli.main \
 
 1.Run the GUI:
 ```bash
-cd "C:\Users\YOURNAME\Music\HGExploPlus"
+cd "HGExploPlus"
 python -m gui.main
 ```
 2.Open your browser and visit:
